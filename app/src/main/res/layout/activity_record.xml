@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/MeasureTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/MovesenseInfo_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="movesense Information"
+        android:gravity="center"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/SensorInfo_right"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="sensor data"-->
+<!--        android:gravity="center"-->
+<!--        />-->
+    <TextView
+        android:id="@+id/MovesenseInfo_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="movesense Information"
+        android:gravity="center"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/SensorInfo_left"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="sensor data"-->
+<!--        android:gravity="center"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/RecordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+</LinearLayout>

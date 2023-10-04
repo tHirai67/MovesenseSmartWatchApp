@@ -53,6 +53,10 @@
                 android:name="android.app.lib_name"
                 android:value=""/>
         </activity>
+        <activity android:name=".connection.ConnectionActivity"/>
+        <activity android:name=".connection.ConnectionRightActivity"/>
+        <activity android:name=".connection.ConnectionLeftActivity"/>
+        <activity android:name=".record.RecordActivity"/>
     </application>
 
 </manifest>

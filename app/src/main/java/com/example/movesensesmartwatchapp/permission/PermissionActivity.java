@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,8 +18,8 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.movesensesmartwatchapp.MainActivity;
 import com.example.movesensesmartwatchapp.R;
+import com.example.movesensesmartwatchapp.connection.ConnectionRightActivity;
 
 public class PermissionActivity extends Activity {
     // Request code（任意の値でOK）
@@ -33,6 +34,7 @@ public class PermissionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         checkPermissions();
     }
 
@@ -46,7 +48,7 @@ public class PermissionActivity extends Activity {
                 checkFineLocationPermission()
         ) {
             Log.i("すべての権限が有効です．","有効");
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, ConnectionRightActivity.class));
             finish();
         }
     }
